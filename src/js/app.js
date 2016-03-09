@@ -34,9 +34,8 @@ class CarpetRideScene extends React.Component {
             <video id="waves" src="../img/3d-waves.mp4" loop="true" width="1000" height="1000"/>
           </a-assets>
 
-          <Entity>
             <Camera>
-              <Animation id="ride" attribute="position" from="0 0 0" to="0 0 -600" repeat="0" ease="linear" begin="" dur="10000"></Animation>
+              <Animation id="ride" attribute="position" from="0 0 0" to="0 0 -600" repeat="0" ease="linear" begin="" dur="15000"></Animation>
               <Entity>
                 <Cursor/>
                 <Animation begin="" easing="ease-in" attribute="scale" fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="500"></Animation>
@@ -44,7 +43,6 @@ class CarpetRideScene extends React.Component {
               </Entity>
             </Camera>
 
-          </Entity>
           <Sky/>
 
           <Entity light={{type: 'ambient', color: '#888'}}/>
@@ -53,7 +51,7 @@ class CarpetRideScene extends React.Component {
 
           <Entity geometry="primitive: cylinder" material={{shader: 'flat', side: 'double', src: '#stripes', repeat: '1 1'}}
             position="0 0 -130"
-            height="1000" radius="20" radius-top="20" radius-bottom="25" open-ended="true" rotation="-90 0 0" scale="1 100 1">
+            height="1100" radius="20" radius-top="20" radius-bottom="25" open-ended="true" rotation="-90 0 0" scale="1 100 1">
           </Entity>
 
           <Entity geometry="primitive: box" material={{shader: 'flat', side: 'double', src: '#waves', repeat: '1 1'}}
