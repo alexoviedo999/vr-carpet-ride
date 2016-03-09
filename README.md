@@ -1,6 +1,6 @@
 ## VR Carpet Ride
 
-An [aframe-react](https://github.com/alexoviedo999/vr-carpet-ride.git) app to show case fun VR eye candy.
+An [aframe-react](https://github.com/alexoviedo999/vr-carpet-ride.git) app for fun VR eye candy.
 
 Using ngokevin's awesome [aframe-react-boilerplate](https://github.com/ngokevin/aframe-react)  combining [A-Frame VR](https://aframe.io) with React.
 
