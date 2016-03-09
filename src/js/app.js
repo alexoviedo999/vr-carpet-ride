@@ -36,10 +36,9 @@ class CarpetRideScene extends React.Component {
 
             <Camera>
               <Animation id="ride" attribute="position" from="0 0 0" to="0 0 -600" repeat="0" ease="linear" begin="" dur="15000"></Animation>
+              <Animation id="ride" attribute="position" from="0 0 -600" to="0 0 -595" repeat="0" ease="linear" begin="20000" dur="3000"></Animation>
               <Entity>
                 <Cursor/>
-                <Animation begin="" easing="ease-in" attribute="scale" fill="backwards" from="0.1 0.1 0.1" to="1 1 1" dur="500"></Animation>
-                <Animation begin="" easing="ease-in" attribute="scale" fill="forwards" from="1 1 1" to="0.1 0.1 0.1" dur="3000"></Animation>
               </Entity>
             </Camera>
 
@@ -50,7 +49,7 @@ class CarpetRideScene extends React.Component {
           <Entity light={{type: 'directional', intensity: 1}} position={[1, 1, 0]}/>
 
           <Entity geometry="primitive: cylinder" material={{shader: 'flat', side: 'double', src: '#stripes', repeat: '1 1'}}
-            position="0 0 -130"
+            position="0 0 0"
             height="1100" radius="20" radius-top="20" radius-bottom="25" open-ended="true" rotation="-90 0 0" scale="1 100 1">
           </Entity>
 
