@@ -122,11 +122,11 @@
 	          _react2.default.createElement(
 	            'a-assets',
 	            null,
-	            _react2.default.createElement('img', { id: 'sky', src: '../img/tron-world.jpg' }),
-	            _react2.default.createElement('video', { id: 'stripes', src: '../img/flow-stripes.mp4', loop: 'true', width: '1000', height: '1000' }),
-	            _react2.default.createElement('video', { id: 'world', src: '../img/planet-world.mp4', loop: 'true', width: '1000', height: '1000' }),
-	            _react2.default.createElement('video', { id: 'lazer', src: '../img/lazer-color-tunnel.mp4', loop: 'true', width: '1000', height: '1000' }),
-	            _react2.default.createElement('video', { id: 'waves', src: '../img/3d-waves.mp4', loop: 'true', width: '1000', height: '1000' })
+	            _react2.default.createElement('img', { id: 'sky', src: './img/tron-world.jpg' }),
+	            _react2.default.createElement('video', { id: 'stripes', src: './img/flow-stripes.mp4', loop: 'true', width: '1000', height: '1000' }),
+	            _react2.default.createElement('video', { id: 'world', src: './img/planet-world.mp4', loop: 'true', width: '1000', height: '1000' }),
+	            _react2.default.createElement('video', { id: 'lazer', src: './img/lazer-color-tunnel.mp4', loop: 'true', width: '1000', height: '1000' }),
+	            _react2.default.createElement('video', { id: 'waves', src: './img/3d-waves.mp4', loop: 'true', width: '1000', height: '1000' })
 	          ),
 	          _react2.default.createElement(
 	            _Camera2.default,
@@ -143,12 +143,12 @@
 	          _react2.default.createElement(_aframeReact.Entity, { light: { type: 'ambient', color: '#888' } }),
 	          _react2.default.createElement(_aframeReact.Entity, { light: { type: 'directional', intensity: 0.5 }, position: [-1, 1, 0] }),
 	          _react2.default.createElement(_aframeReact.Entity, { light: { type: 'directional', intensity: 1 }, position: [1, 1, 0] }),
-	          _react2.default.createElement(_aframeReact.Entity, { geometry: 'primitive: cylinder', material: { shader: 'flat', side: 'double', src: '#stripes', repeat: '1 1' },
+	          _react2.default.createElement(_aframeReact.Entity, { geometry: 'primitive: cylinder', material: { shader: 'flat', side: 'double', src: '#sky', repeat: '1 1' },
 	            position: '0 0 0',
 	            height: '1100', radius: '20', 'radius-top': '20', 'radius-bottom': '25', 'open-ended': 'true', rotation: '-90 0 0', scale: '1 100 1' }),
 	          _react2.default.createElement(
 	            _aframeReact.Entity,
-	            { geometry: 'primitive: box', material: { shader: 'flat', side: 'double', src: '#waves', repeat: '1 1' },
+	            { geometry: 'primitive: box', material: { shader: 'flat', side: 'double', src: '#sky', repeat: '1 1' },
 	              onClick: this.changeColor,
 	              position: '0 0 -600' },
 	            _react2.default.createElement(_aframeReact.Animation, { attribute: 'rotation', dur: '5000', repeat: 'indefinite', from: '0 360 0', to: '0 0 0', easing: 'linear' })

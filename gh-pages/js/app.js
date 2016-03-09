@@ -49,12 +49,12 @@ class CarpetRideScene extends React.Component {
           <Entity light={{type: 'directional', intensity: 0.5}} position={[-1, 1, 0]}/>
           <Entity light={{type: 'directional', intensity: 1}} position={[1, 1, 0]}/>
 
-          <Entity geometry="primitive: cylinder" material={{shader: 'flat', side: 'double', src: '#stripes', repeat: '1 1'}}
+          <Entity geometry="primitive: cylinder" material={{shader: 'flat', side: 'double', src: '#sky', repeat: '1 1'}}
             position="0 0 0"
             height="1100" radius="20" radius-top="20" radius-bottom="25" open-ended="true" rotation="-90 0 0" scale="1 100 1">
           </Entity>
 
-          <Entity geometry="primitive: box" material={{shader: 'flat', side: 'double', src: '#waves', repeat: '1 1'}}
+          <Entity geometry="primitive: box" material={{shader: 'flat', side: 'double', src: '#sky', repeat: '1 1'}}
               onClick={this.changeColor}
               position="0 0 -600">
               <Animation attribute="rotation" dur="5000" repeat="indefinite" from="0 360 0" to="0 0 0" easing="linear"/>

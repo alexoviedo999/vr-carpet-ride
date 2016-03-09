@@ -143,12 +143,12 @@
 	          _react2.default.createElement(_aframeReact.Entity, { light: { type: 'ambient', color: '#888' } }),
 	          _react2.default.createElement(_aframeReact.Entity, { light: { type: 'directional', intensity: 0.5 }, position: [-1, 1, 0] }),
 	          _react2.default.createElement(_aframeReact.Entity, { light: { type: 'directional', intensity: 1 }, position: [1, 1, 0] }),
-	          _react2.default.createElement(_aframeReact.Entity, { geometry: 'primitive: cylinder', material: { shader: 'flat', side: 'double', src: '#stripes', repeat: '1 1' },
+	          _react2.default.createElement(_aframeReact.Entity, { geometry: 'primitive: cylinder', material: { shader: 'flat', side: 'double', src: '#sky', repeat: '1 1' },
 	            position: '0 0 0',
 	            height: '1100', radius: '20', 'radius-top': '20', 'radius-bottom': '25', 'open-ended': 'true', rotation: '-90 0 0', scale: '1 100 1' }),
 	          _react2.default.createElement(
 	            _aframeReact.Entity,
-	            { geometry: 'primitive: box', material: { shader: 'flat', side: 'double', src: '#waves', repeat: '1 1' },
+	            { geometry: 'primitive: box', material: { shader: 'flat', side: 'double', src: '#sky', repeat: '1 1' },
 	              onClick: this.changeColor,
 	              position: '0 0 -600' },
 	            _react2.default.createElement(_aframeReact.Animation, { attribute: 'rotation', dur: '5000', repeat: 'indefinite', from: '0 360 0', to: '0 0 0', easing: 'linear' })
