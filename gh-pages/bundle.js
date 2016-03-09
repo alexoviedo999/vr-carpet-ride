@@ -122,11 +122,11 @@
 	          _react2.default.createElement(
 	            'a-assets',
 	            null,
-	            _react2.default.createElement('img', { id: 'sky', src: '../img/tron-world.jpg' }),
-	            _react2.default.createElement('video', { id: 'stripes', src: '../img/flow-stripes.mp4', loop: 'true', width: '1000', height: '1000' }),
-	            _react2.default.createElement('video', { id: 'world', src: '../img/planet-world.mp4', loop: 'true', width: '1000', height: '1000' }),
-	            _react2.default.createElement('video', { id: 'lazer', src: '../img/lazer-color-tunnel.mp4', loop: 'true', width: '1000', height: '1000' }),
-	            _react2.default.createElement('video', { id: 'waves', src: '../img/3d-waves.mp4', loop: 'true', width: '1000', height: '1000' })
+	            _react2.default.createElement('img', { id: 'sky', src: './img/tron-world.jpg' }),
+	            _react2.default.createElement('video', { id: 'stripes', src: './img/flow-stripes.mp4', loop: 'true', width: '1000', height: '1000' }),
+	            _react2.default.createElement('video', { id: 'world', src: './img/planet-world.mp4', loop: 'true', width: '1000', height: '1000' }),
+	            _react2.default.createElement('video', { id: 'lazer', src: './img/lazer-color-tunnel.mp4', loop: 'true', width: '1000', height: '1000' }),
+	            _react2.default.createElement('video', { id: 'waves', src: './img/3d-waves.mp4', loop: 'true', width: '1000', height: '1000' })
 	          ),
 	          _react2.default.createElement(
 	            _Camera2.default,

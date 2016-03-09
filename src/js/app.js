@@ -28,11 +28,11 @@ class CarpetRideScene extends React.Component {
       <div>
         <Scene>
           <a-assets>
-            <img id="sky" src="../img/tron-world.jpg"/>
-            <video id="stripes" src="../img/flow-stripes.mp4" loop="true" width="1000" height="1000"/>
-            <video id="world" src="../img/planet-world.mp4" loop="true" width="1000" height="1000"/>
-            <video id="lazer" src="../img/lazer-color-tunnel.mp4" loop="true" width="1000" height="1000"/>
-            <video id="waves" src="../img/3d-waves.mp4" loop="true" width="1000" height="1000"/>
+            <img id="sky" src="./img/tron-world.jpg"/>
+            <video id="stripes" src="./img/flow-stripes.mp4" loop="true" width="1000" height="1000"/>
+            <video id="world" src="./img/planet-world.mp4" loop="true" width="1000" height="1000"/>
+            <video id="lazer" src="./img/lazer-color-tunnel.mp4" loop="true" width="1000" height="1000"/>
+            <video id="waves" src="./img/3d-waves.mp4" loop="true" width="1000" height="1000"/>
           </a-assets>
 
             <Camera>
