@@ -22,6 +22,7 @@ class CarpetRideScene extends React.Component {
     });
   };
 
+
   render () {
     return (
       <div>
