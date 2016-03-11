@@ -36,8 +36,9 @@ class CarpetRideScene extends React.Component {
           </a-assets>
 
             <Camera>
-              <Animation id="ride" attribute="position" from="0 0 0" to="0 0 -600" repeat="0" ease="linear" begin="" dur="15000"></Animation>
-              <Animation id="ride" attribute="position" from="0 0 -600" to="0 0 -595" repeat="0" ease="linear" begin="20000" dur="3000"></Animation>
+              <Animation id="ride" attribute="position" from="0 0 0" to="0 0 -400" repeat="0" ease="linear" begin="" dur="30000"></Animation>
+              <Animation id="ride" attribute="position" from="0 0 -400" to="0 0 -600" repeat="0" ease="linear" begin="30000" dur="5000"></Animation>
+              <Animation id="ride" attribute="position" from="0 0 -600" to="0 0 -595" repeat="0" ease="linear" begin="35000" dur="10000"></Animation>
               <Entity>
                 <Cursor/>
               </Entity>
