@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Ride the carpet in VR",
   "dependencies": {
-    "aframe": "aframevr/aframe#dev",
+    "aframe": "aframevr/aframe#master",
     "aframe-react": "^1.2.0",
     "babel-polyfill": "^6.3.14",
     "react": "^0.14.3",
