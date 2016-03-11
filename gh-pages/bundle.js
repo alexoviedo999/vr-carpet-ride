@@ -89,13 +89,13 @@
 
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-	var BoilerplateScene = function (_React$Component) {
-	  _inherits(BoilerplateScene, _React$Component);
+	var CarpetRideScene = function (_React$Component) {
+	  _inherits(CarpetRideScene, _React$Component);
 
-	  function BoilerplateScene(props) {
-	    _classCallCheck(this, BoilerplateScene);
+	  function CarpetRideScene(props) {
+	    _classCallCheck(this, CarpetRideScene);
 
-	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(BoilerplateScene).call(this, props));
+	    var _this = _possibleConstructorReturn(this, Object.getPrototypeOf(CarpetRideScene).call(this, props));
 
 	    _this.changeColor = function () {
 	      var colors = ['red', 'orange', 'yellow', 'green', 'blue'];
@@ -110,36 +110,58 @@
 	    return _this;
 	  }
 
-	  _createClass(BoilerplateScene, [{
+	  _createClass(CarpetRideScene, [{
 	    key: 'render',
 	    value: function render() {
 	      return _react2.default.createElement(
-	        _aframeReact.Scene,
+	        'div',
 	        null,
 	        _react2.default.createElement(
-	          _Camera2.default,
+	          _aframeReact.Scene,
 	          null,
-	          _react2.default.createElement(_Cursor2.default, null)
-	        ),
-	        _react2.default.createElement(_Sky2.default, null),
-	        _react2.default.createElement(_aframeReact.Entity, { light: { type: 'ambient', color: '#888' } }),
-	        _react2.default.createElement(_aframeReact.Entity, { light: { type: 'directional', intensity: 0.5 }, position: [-1, 1, 0] }),
-	        _react2.default.createElement(_aframeReact.Entity, { light: { type: 'directional', intensity: 1 }, position: [1, 1, 0] }),
-	        _react2.default.createElement(
-	          _aframeReact.Entity,
-	          { geometry: 'primitive: box', material: { color: this.state.color },
-	            onClick: this.changeColor,
-	            position: '0 0 -5' },
-	          _react2.default.createElement(_aframeReact.Animation, { attribute: 'rotation', dur: '5000', repeat: 'indefinite', to: '0 360 360' })
+	          _react2.default.createElement(
+	            'a-assets',
+	            null,
+	            _react2.default.createElement('img', { id: 'sky', src: './img/tron-world.jpg' }),
+	            _react2.default.createElement('video', { id: 'stripes', src: './img/flow-stripes.mp4', loop: 'true', width: '1000', height: '1000' }),
+	            _react2.default.createElement('video', { id: 'world', src: './img/planet-world.mp4', loop: 'true', width: '1000', height: '1000' }),
+	            _react2.default.createElement('video', { id: 'lazer', src: './img/lazer-color-tunnel.mp4', loop: 'true', width: '1000', height: '1000' }),
+	            _react2.default.createElement('video', { id: 'waves', src: './img/3d-waves.mp4', loop: 'true', width: '1000', height: '1000' })
+	          ),
+	          _react2.default.createElement(
+	            _Camera2.default,
+	            null,
+	            _react2.default.createElement(_aframeReact.Animation, { id: 'ride', attribute: 'position', from: '0 0 0', to: '0 0 -600', repeat: '0', ease: 'linear', begin: '', dur: '15000' }),
+	            _react2.default.createElement(_aframeReact.Animation, { id: 'ride', attribute: 'position', from: '0 0 -600', to: '0 0 -595', repeat: '0', ease: 'linear', begin: '20000', dur: '3000' }),
+	            _react2.default.createElement(
+	              _aframeReact.Entity,
+	              null,
+	              _react2.default.createElement(_Cursor2.default, null)
+	            )
+	          ),
+	          _react2.default.createElement(_Sky2.default, null),
+	          _react2.default.createElement(_aframeReact.Entity, { light: { type: 'ambient', color: '#888' } }),
+	          _react2.default.createElement(_aframeReact.Entity, { light: { type: 'directional', intensity: 0.5 }, position: [-1, 1, 0] }),
+	          _react2.default.createElement(_aframeReact.Entity, { light: { type: 'directional', intensity: 1 }, position: [1, 1, 0] }),
+	          _react2.default.createElement(_aframeReact.Entity, { geometry: 'primitive: cylinder', material: { shader: 'flat', side: 'double', src: '#sky', repeat: '1 1' },
+	            position: '0 0 0',
+	            height: '1100', radius: '20', 'radius-top': '20', 'radius-bottom': '25', 'open-ended': 'true', rotation: '-90 0 0', scale: '1 100 1' }),
+	          _react2.default.createElement(
+	            _aframeReact.Entity,
+	            { geometry: 'primitive: box', material: { shader: 'flat', side: 'double', src: '#sky', repeat: '1 1' },
+	              onClick: this.changeColor,
+	              position: '0 0 -600' },
+	            _react2.default.createElement(_aframeReact.Animation, { attribute: 'rotation', dur: '5000', repeat: 'indefinite', from: '0 360 0', to: '0 0 0', easing: 'linear' })
+	          )
 	        )
 	      );
 	    }
 	  }]);
 
-	  return BoilerplateScene;
+	  return CarpetRideScene;
 	}(_react2.default.Component);
 
-	_reactDom2.default.render(_react2.default.createElement(BoilerplateScene, null), document.querySelector('.scene-container'));
+	_reactDom2.default.render(_react2.default.createElement(CarpetRideScene, null), document.querySelector('.scene-container'));
 
 /***/ },
 /* 2 */
@@ -90605,7 +90627,7 @@
 
 	exports.default = function (props) {
 	        return _react2.default.createElement(_aframeReact.Entity, { geometry: { primitive: 'sphere', radius: 5000 },
-	                material: { color: "#73CFF0", shader: 'flat' },
+	                material: { color: "#73CFF0", shader: 'flat', src: '#sky' },
 	                scale: '1 1 -1' });
 	};
 
