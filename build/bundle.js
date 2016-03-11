@@ -131,9 +131,9 @@
 	          _react2.default.createElement(
 	            _Camera2.default,
 	            null,
-	            _react2.default.createElement(_aframeReact.Animation, { id: 'ride', attribute: 'position', from: '0 0 0', to: '0 0 -100', repeat: '0', ease: 'linear', begin: '', dur: '50000' }),
-	            _react2.default.createElement(_aframeReact.Animation, { id: 'ride', attribute: 'position', from: '0 0 -100', to: '0 0 -250', repeat: '0', ease: 'linear', begin: '50000', dur: '5000' }),
-	            _react2.default.createElement(_aframeReact.Animation, { id: 'ride', attribute: 'position', from: '0 0 -250', to: '0 0 -245', repeat: '0', ease: 'linear', begin: '55000', dur: '10000' }),
+	            _react2.default.createElement(_aframeReact.Animation, { id: 'ride', attribute: 'position', from: '0 0 0', to: '0 0 -545', repeat: '0', ease: 'ease', begin: '', dur: '20000' }),
+	            _react2.default.createElement(_aframeReact.Animation, { id: 'ride', attribute: 'position', from: '0 0 -545', to: '0 0 -550', repeat: '0', ease: 'ease', begin: '20000', dur: '10000' }),
+	            _react2.default.createElement(_aframeReact.Animation, { id: 'ride', attribute: 'position', from: '0 0 -550', to: '0 0 -545', repeat: '0', ease: 'ease', begin: '40000', dur: '10000' }),
 	            _react2.default.createElement(
 	              _aframeReact.Entity,
 	              null,
@@ -146,12 +146,12 @@
 	          _react2.default.createElement(_aframeReact.Entity, { light: { type: 'directional', intensity: 1 }, position: [1, 1, 0] }),
 	          _react2.default.createElement(_aframeReact.Entity, { geometry: 'primitive: cylinder', material: { shader: 'flat', side: 'double', src: '#sky', repeat: '1 1' },
 	            position: '0 0 0',
-	            height: '1500', radius: '20', 'radius-top': '20', 'radius-bottom': '25', 'open-ended': 'true', rotation: '-90 0 0', scale: '1 100 1' }),
+	            height: '500', radius: '20', 'radius-top': '20', 'radius-bottom': '25', 'open-ended': 'true', rotation: '-90 0 0', scale: '1 450 1' }),
 	          _react2.default.createElement(
 	            _aframeReact.Entity,
 	            { geometry: 'primitive: box', material: { shader: 'flat', side: 'double', src: '#waves', repeat: '1 1' },
 	              onClick: this.changeColor,
-	              position: '0 0 -250' },
+	              position: '0 0 -550' },
 	            _react2.default.createElement(_aframeReact.Animation, { attribute: 'rotation', dur: '5000', repeat: 'indefinite', from: '0 360 0', to: '0 0 0', easing: 'linear' })
 	          )
 	        )
